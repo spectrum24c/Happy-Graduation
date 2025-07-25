@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondary School Graduation Celebration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./image/2859035.jpg" type="png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --primary: #6b46c1;
+            --secondary: #f687b3;
+            --accent: #f6ad55;
+        }
+        
+       ::-webkit-scrollbar{
+        display: none;
+       }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-text {
+            color: rgba(107, 70, 193, 0.9);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(107, 70, 193, 0.9) 0%, rgba(246, 135, 179, 0.9) 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: var(--accent);
+            opacity: 0.7;
+            animation: fall 5s linear infinite;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 20px;
+            width: 1px;
+            height: calc(100% - 15px);
+            background-color: #ddd;
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .message-box {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .message-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero text-white flex items-center justify-center relative">
+        <!-- Confetti Background -->
+        <div id="confetti-container"></div>
+        
+        <div class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <div class="floating">
+                    <img src="./image/international-day-education-celebration.jpg" alt="Graduate smiling in cap and gown holding diploma" class="mx-auto rounded-lg shadow-2xl" style="max-height: 500px;">
+                </div>
+            </div>
+            <div class="md:w-1/2 text-center md:text-left px-6">
+                <p class="text-xl mb-4">Congratulations on Your Graduation!</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">My Amazing <span class="gradient-text">Graduate</span></h1>
+                <p class="text-xl md:text-2xl mb-8">All your hard work has paid off. I'm so proud of you and everything you've accomplished in secondary school.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">My Message to You</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                
+                <div class="message-box p-6 md:p-10 mb-8">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-600">Proud Beyond Words</h3>
+                    <p class="mb-4 text-gray-700"><p>My Dearest,</p> <br>
+
+Watching you graduate today fills my heart with an indescribable pride. You've poured your heart and soul into every step of this journey, overcoming challenges with grace and determination. This milestone is a testament to your hard work, resilience, and incredible spirit.
+
+I'm beyond proud of you not just for this achievement, but for the person you are. Your kindness, your laughter, and your unwavering drive light up the world around you. As you step into this new chapter, know that I'm by your side, cheering you on, believing in you, and loving you more than words can ever express.
+
+Congratulations, my love here's to you and all the amazing things you'll do next!</p>
+                    <p class="mb-4 text-gray-700">Your graduation is not an ending, but a beautiful beginning. I can't wait to see where your brilliance takes you next, and I'll be cheering you on every step of the way.</p>
+                </div>
+                
+                <div class="message-box p-6 md:p-10 bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+                    <h3 class="text-2xl font-bold mb-4">With All My Love</h3>
+                    <p class="mb-4">Today we celebrate your incredible achievement, but know that I celebrate you every day. You're my inspiration, and I love you more than words can say. Congratulations, my brilliant graduate!</p>
+                    <div class="text-right">
+                        <p class="italic text-xl">- Kenny❤️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Celebration -->
+    <section class="py-20 bg-gray-900 text-white text-center">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Here's to the Next Chapter!</h2>
+                <p class="text-xl mb-8">Your future is bright, and I can't wait to be by your side for all the adventures to come.</p>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script>
+        // Create confetti effect
+        function createConfetti() {
+            const container = document.getElementById('confetti-container');
+            const colors = ['#f6ad55', '#f687b3', '#6b46c1', '#68d391', '#63b3ed'];
+            
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                confetti.style.animationDelay = Math.random() * 5 + 's';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                container.appendChild(confetti);
+            }
+        }
+        
+        // Initialize confetti on load
+        window.onload = function() {
+            createConfetti();
+        };
+    </script>
+</body>
+</html>
